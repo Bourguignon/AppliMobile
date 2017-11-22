@@ -24,6 +24,7 @@ public class Menu extends AppCompatActivity {
         TextView email = (TextView) findViewById(R.id.textView4);
         TextView adresse = (TextView) findViewById(R.id.textView5);
         TextView commentaire = (TextView) findViewById(R.id.textView6);
+        TextView civ = (TextView) findViewById(R.id.textView7);
 
 
 
@@ -33,5 +34,28 @@ public class Menu extends AppCompatActivity {
         email.setText(i.getStringExtra("Email"));
         adresse.setText(i.getStringExtra("Adresse"));
         commentaire.setText(i.getStringExtra("Commentaire"));
+        civ.setText(i.getStringExtra("Civ"));
+
+    }
+
+    protected void Acceuil(View V){
+
+        Intent i = new Intent(Menu.this,MainActivity.class);
+
+        startActivity(i);
+
+    }
+
+    protected void Sport(View V){
+
+        Intent i = new Intent(Menu.this,Sport.class);
+
+        TextView nom = (TextView) findViewById(R.id.textView);
+        TextView prenom = (TextView) findViewById(R.id.textView2);
+
+        i.putExtra("Nom",nom.getText().toString());
+        i.putExtra("Prenom",prenom.getText().toString());
+
+        startActivity(i);
     }
 }

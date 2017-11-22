@@ -10,4 +10,6 @@
     <string name="Email">Email</string>
     <string name="Adresse">Adresse Postale</string>
     <string name="Commentaire">Commentaire</string>
+    <string name="Sport">Sport</string>
+    <string name="Acceuil">Acceuil</string>
 </resources>

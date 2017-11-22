@@ -27,6 +27,7 @@ public class Authentification extends AppCompatActivity {
     protected void OnClick(View V){
 
         Intent i = new Intent(Authentification.this,Menu.class);
+        RadioButton Civ = (RadioButton) findViewById(R.id.M_);
         EditText nom = (EditText) findViewById(R.id.Nom);
         EditText prenom = (EditText)findViewById(R.id.Prenom);
         EditText date = (EditText)findViewById(R.id.Date) ;
@@ -34,6 +35,11 @@ public class Authentification extends AppCompatActivity {
         EditText adresse = (EditText)findViewById(R.id.Adresse) ;
         EditText commentaire = (EditText)findViewById(R.id.Commentaire) ;
 
+        if(Civ.isChecked()){
+            i.putExtra("Civ","M.");
+        }else{
+            i.putExtra("Civ","Mme");
+        }
 
         i.putExtra("Nom",nom.getText().toString());
         i.putExtra("Prenom",prenom.getText().toString());

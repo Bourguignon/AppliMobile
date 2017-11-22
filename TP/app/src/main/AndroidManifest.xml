@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Authentification" />
-        <activity android:name=".Menu"></activity>
+        <activity android:name=".Menu" />
+        <activity android:name=".Sport"></activity>
     </application>
 
 </manifest>
