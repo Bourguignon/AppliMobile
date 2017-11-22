@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TP</string>
+    <string name="Start">Start</string>
+    <string name="Valider">Valider</string>
+    <string name="M">M.</string>
+    <string name="Mme">Mme</string>
+    <string name="Nom">Nom</string>
+    <string name="Prenom">Prenom</string>
+    <string name="Date">Date de naissance</string>
+    <string name="Email">Email</string>
+    <string name="Adresse">Adresse Postale</string>
+    <string name="Commentaire">Commentaire</string>
+</resources>
